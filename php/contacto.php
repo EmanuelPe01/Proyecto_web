@@ -12,11 +12,13 @@
         section {
             padding-top: 50px;
         }
+        .waves-effect.waves-azules .waves-ripple {
+            background-color: rgba(29, 104, 255, 0.65);
+        }
     </style>
 </head>
 
 <body>
-    <header>
         <header>
             <nav class="light-blue darken-4 nav-extended">
                 <div class="nav-wrapper container nav">
@@ -66,7 +68,7 @@
                 <h1 class="center">Contacto</h1>
                 <div class="row">
                     <!--Formulario de contacto------------------- Puedes cambiarle el nombre al action pero en el archivo debes incluir la linea de codigo que está ahí -->
-                    <form class="col s12 m12 l6" action="validar.php">
+                    <form class="col s12 m12 l6" action="validar.php" metod="post">
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="nombre" type="text" class="validate">
@@ -117,6 +119,9 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="Container">
+                <h2 class="center">¿Te gustaría responder un formulario? <br/> <a class="btn-large white black-text waves-effect waves-azules waves-ripple flow-text" href="cuestionario.php">Ir</a></h2>
             </section>
         </main>
         <footer class="light-blue darken-4 page-footer">
