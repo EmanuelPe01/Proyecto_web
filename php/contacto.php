@@ -133,11 +133,13 @@
                 </a>
             </div>
             <div class="col l5">
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Aviso legal</a>
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Servicios</a>
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Contacto</a>
-            </div>
-
+                    <a href="../html/corporativo.html" class="light-blue-text text-lighten-5 waves-effect btn-flat"> Aviso
+                        legal</a>
+                    <a href="../htmlNosotros.html" class="light-blue-text text-lighten-5 waves-effect btn-flat">
+                        Servicios</a>
+                    <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">
+                        Contacto</a>
+                </div>
           </div>
         </div>
         <div class="footer-copyright">

@@ -166,9 +166,12 @@
                 </a>
             </div>
             <div class="col l5">
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Aviso legal</a>
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Servicios</a>
-                <a href="#" class="light-blue-text text-lighten-5 waves-effect btn-flat">  Contacto</a>
+                    <a href="../html/corporativo.html" class="light-blue-text text-lighten-5 waves-effect btn-flat"> Aviso
+                        legal</a>
+                    <a href="../html/Nosotros.html" class="light-blue-text text-lighten-5 waves-effect btn-flat">
+                        Servicios</a>
+                    <a href="contacto.php" class="light-blue-text text-lighten-5 waves-effect btn-flat">
+                        Contacto</a>
             </div>
 
           </div>
