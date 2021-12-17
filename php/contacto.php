@@ -22,12 +22,12 @@
         <header>
             <nav class="light-blue darken-4 nav-extended">
                 <div class="nav-wrapper container nav">
-                    <a href="../index.php" class="brand-logo">
+                    <a href="../index.html" class="brand-logo">
                         <img src="../img/logo.png" alt="">
                     </a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a class="flow-text" href="../index.php">Inicio</a></li>
+                        <li><a class="flow-text" href="../index.html">Inicio</a></li>
                         <li><a class="dropdown-button flow-text" data-activates="Nosotros-d" href="#">Nosotros</a></li>
                         <li><a class="flow-text" href="../html/corporativo.html">Corporativo</a></li>
                         <li><a class="btn white black-text waves-effect waves-grey" href="#">Contacto</a></li>
@@ -43,7 +43,7 @@
                                 <a><span class="white-text name">CONTACTANOS</span></a>
                             </div>
                         </li>
-                        <li><a class="flow-text" href="../index.php">Inicio</a></li>
+                        <li><a class="flow-text" href="../index.html">Inicio</a></li>
                         <li><a class="dropdown-button flow-text" data-activates="Nosotros-d1" href="#">Nosotros <i class="material-icons">arrow_drop_down</i></a></li>
                         <li><a class="flow-text" href="../html/corporativo.html">Corporativo</a></li>
                         <li><a class="btn btn-large white black-text waves-effect waves-grey" href="#">Contacto</a></li>
@@ -128,7 +128,7 @@
         <div class="container">
           <div class="row">
             <div class="col l4">
-                <a href="#" class="brand-logo">
+                <a href="../index.html" class="brand-logo">
                     <img src="../img/logo.png" alt="">
                 </a>
             </div>
