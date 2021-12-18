@@ -56,92 +56,88 @@
                     <div class="indigo-text text-darken-4 "><h3 class="center-align">Cuestionario</h3></div>
                 </div>
             </div>
-            <div class="container center">
+            <div class="container">
                 <div class="row">
-                        <form metod="post" action="resp.php" class="col s12">
+                        <form  class="col s12" name="forma" action ="resp.php" enctype="multipart/form-data" method="POST">
                         <div class = "col s12 m6"> 
-                            <div class="indigo-rext text-darken-4"><h5>Pregunta Random</h5></div>
+                            <div class="indigo-rext text-darken-4"><h5>¿Cual de las siguientes compañías NO PERTENECE a America Movil?</h5></div>
                             <p>
-                                <input name="pregunta1" type="radio" id="r1-p1" />
-                                <label for="r1-p1">Opcion 1</label>
-                            </p>
-                            <p>
-                                <input name="pregunta1" type="radio" id="r2-p1"/>
-                                <label for="r2-p1">Opcion 2</label>
-                            </p>
-                            <p>
-                                <input name="pregunta1" type="radio" id="r3-p1"/>
-                                <label for="r3-p1">Opcion 3</label>
-                            </p>
-                            <p>
-                                <input name="pregunta1" type="radio" id="r4-p1"/>
-                                <label for="r4-p1">Opcion 4</label>
-                            </p>
+                     <input class="with-gap" name="preg1" id="preg1res1" type="radio" value="Telmex" checked/>
+                      <label for="preg1res1">Telmex</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg1" id="preg1res2" type="radio" value="Telnor" />
+                      <label for="preg1res2">Telnor</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg1" id="preg1res3" type="radio" value="Telcel" />
+                      <label for="preg1res3">Telcel</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg1" id="preg1res4" type="radio" value="Telefónica" />
+                      <label for="preg1res4">Telefónica</label>
+                     </p>
                         </div>
                         <div class = "col s12 m6"> 
-                            <div class="indigo-rext text-darken-4"><h5>Pregunta Random 2</h5></div>
+                            <div class="indigo-rext text-darken-4"><h5>¿En cuál de estas regiones América Móvil es el líder en servicios integrados de telecomunicaciones?</h5></div>
                             <p>
-                                <input name="pregunta2" type="radio" id="r1-p2" />
-                                <label for="r1-p2">Opcion 1</label>
-                            </p>
-                            <p>
-                                <input name="pregunta2" type="radio" id="r2-p2"/>
-                                <label for="r2-p2">Opcion 2</label>
-                            </p>
-                            <p>
-                                <input name="pregunta2" type="radio" id="r3-p2"/>
-                                <label for="r3-p2">Opcion 3</label>
-                            </p>
-                            <p>
-                                <input name="pregunta2" type="radio" id="r4-p2"/>
-                                <label for="r4-p2">Opcion 4</label>
-                            </p>
+                     <input class="with-gap" name="preg2" id="preg2res1" type="radio" value="India" checked />
+                      <label for="preg2res1">India</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg2" id="preg2res2" type="radio" value="Latinoamerica"/>
+                      <label for="preg2res2">Latinoamérica</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg2" id="preg2res3" type="radio" value="China"/>
+                      <label for="preg2res3">China</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg2" id="preg2res4" type="radio" value="ninguna" />
+                      <label for="preg2res4">Ninguna de las anteriores</label>
+                     </p>
                         </div>
                         <div class = "col s12 m6"> 
-                            <div class="indigo-rext text-darken-4"><h5>Pregunta Random 3</h5></div>
+                            <div class="indigo-rext text-darken-4"><h5>¿En donde se encuentra la sede de America Movil?</h5></div>
                             <p>
-                                <input name="pregunta3" type="radio" id="r1-p3" />
-                                <label for="r1-p3">Opcion 1</label>
-                            </p>
-                            <p>
-                                <input name="pregunta3" type="radio" id="r2-p3"/>
-                                <label for="r2-p3">Opcion 2</label>
-                            </p>
-                            <p>
-                                <input name="pregunta3" type="radio" id="r3-p3"/>
-                                <label for="r3-p3">Opcion 3</label>
-                            </p>
-                            <p>
-                                <input name="pregunta3" type="radio" id="r4-p3"/>
-                                <label for="r4-p3">Opcion 4</label>
-                            </p>
+                     <input class="with-gap" name="preg3" id="preg3res1" type="radio" value="Torre mayor, Paseo de la Reforma" checked />
+                      <label for="preg3res1">Torre mayor, Paseo de la Reforma</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg3" id="preg3res2" type="radio" value="Plaza Carso, Polanco" />
+                      <label for="preg3res2">Plaza Carso, Polanco</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg3" id="preg3res3" type="radio" value="Torre Latinoamericana, Centro Histórico" />
+                      <label for="preg3res3">Torre Latinoamericana, Centro Histórico</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg3" id="preg3res4" type="radio" value="Pabellon M, Monterrey" />
+                      <label for="preg3res4">Pabellon M, Monterrey</label>
+                     </p>
                         </div>
                         <!--Copiar todo desde aqui-->
                         <div class = "col s12 m6"> 
-                            <div class="indigo-rext text-darken-4"><h5>Pregunta Random n</h5></div>
+                            <div class="indigo-rext text-darken-4"><h5>¿Nombre de nuestro socio fundador?</h5></div>
                             <p>
-                                <input name="pregunta4" type="radio" id="r1-p4" />
-                                <label for="r1-p4">Opcion 1</label>
-                            </p>
-                            <p>
-                                <input name="pregunta4" type="radio" id="r2-p4"/>
-                                <label for="r2-p4">Opcion 2</label>
-                            </p>
-                            <p>
-                                <input name="pregunta4" type="radio" id="r3-p4"/>
-                                <label for="r3-p4">Opcion 3</label>
-                            </p>
-                            <p>
-                                <input name="pregunta4" type="radio" id="r4-p4"/>
-                                <label for="r4-p4">Opcion 4</label>
-                            </p>
+                     <input class="with-gap" name="preg4" id="preg4res1" type="radio" value="Carlos Slim Helu" checked />
+                      <label for="preg4res1">Carlos Slim Helú</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg4" id="preg4res2" type="radio" value="Daniel Hajj Aboumrad" />
+                      <label for="preg4res2">Daniel Hajj Aboumrad</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg4" id="preg4res3" type="radio" value="Arturo Elías Ayub" />
+                      <label for="preg4res3">Arturo Elías Ayub</label>
+                     </p>
+                     <p>
+                     <input class="with-gap" name="preg4" id="preg4res4" type="radio" value="Ninguno de los anteriores" />
+                      <label for="preg4res4">Ninguno de los anteriores</label>
+                     </p>
                         </div>
-                        <!-- para agregar más preguntas al cuestionario y cambiar el id de cada opcion rn-pm 
-                        n -> numero de opción
-                        m -> numero de la pregunta
-                        además, cambiar el name de las opciones; en cada pregunta las opciones deben tener el mismo name
-                        -->
-                        <div class="col s12">
+                        
+                        <div class="col s12 center">
                             <br/><br/>
                             <a class="center light-blue darken-4 waves-effect waves-light btn modal-trigger" href="#modal2">Enviar <i class="material-icons right">send</i></a>
                             <div id="modal2" class="modal">
