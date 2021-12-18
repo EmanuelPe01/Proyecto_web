@@ -1,6 +1,15 @@
+<?php
+    include 'php/data.php';
+    $mysqli = new mysqli("sql5.freemysqlhosting.net:3306", "sql5459378", "pd5u6sSVKu", "sql5459378");
+    if ($mysqli->connect_errno) {
+        echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+    $jsonDataGoodPie =  getDataJsonPieChartGood();
+    $jsonDataBadPie =  getDataJsonPieChartBad();
+    $jsonDataGoodBadBar =  getDataJsonbarChartGood();
+?>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
@@ -198,6 +207,19 @@
                 </li>
             </ul>
         </section>
+        <section class="container-fluid center">
+            <div class="row">
+                <div class="col s12 l6">
+                    <div id="chart_div"></div>
+                </div>
+                <div class="col s12 l6">
+                    <div id="bad_chart_div"></div>
+                </div>
+                <div class="col s12">
+                    <div id="bar_chart_div"></div>
+                </div>
+            </div> 
+        </section>
     </main>
     <footer class="light-blue darken-4 page-footer">
         <div class="container">
@@ -223,6 +245,71 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(drawChart);
+
+    google.setOnLoadCallback(drawChartBad);
+
+    google.charts.setOnLoadCallback(drawBarChart);
+
+    function drawChart() {
+
+      // Create our data table out of JSON data loaded from server.
+      var data = new google.visualization.DataTable(<?=$jsonDataGoodPie?>);
+      var options = {
+           title: 'Respuestas Correctas',
+          is3D: 'true',
+          width: 800,
+          height: 600
+        };
+      // Instantiate and draw our chart, passing in some options.
+      // Do not forget to check your div ID
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+    function drawChartBad() {
+
+    // Create our data table out of JSON data loaded from server.
+    var data = new google.visualization.DataTable(<?=$jsonDataBadPie?>);
+    var options = {
+        title: 'Respuestas Incorrectas',
+        is3D: 'true',
+        width: 800,
+        height: 600
+    };
+    // Instantiate and draw our chart, passing in some options.
+    // Do not forget to check your div ID
+    var chart = new google.visualization.PieChart(document.getElementById('bad_chart_div'));
+    chart.draw(data, options);
+    }
+
+    function drawBarChart() {
+      var data = google.visualization.arrayToDataTable(<?=$jsonDataGoodBadBar?>);
+
+      var options = {
+        title: 'Preguntas',
+        chartArea: {width: '50%'},
+        isStacked: true,
+        hAxis: {
+          title: 'Numero de Respuestas',
+          minValue: 0,
+        },
+        vAxis: {
+          title: 'Pregunta'
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
