@@ -71,29 +71,29 @@
                     <form class="col s12 m12 l6" action="validar.php" metod="post">
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="nombre" type="text" class="validate">
+                                <input id="nombre" name="nombre"type="text" class="validate">
                                 <label for="nombre">Nombre(s) </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 l6">
-                                <input id="apellido_p" type="text" class="validate">
+                                <input id="apellido_p"  name="apellido_p" type="text" class="validate">
                                 <label for="apellido_p">Apellido paterno </label>
                             </div>
                             <div class="input-field col s12 l6">
-                                <input id="apellido_m" type="text" class="validate">
+                                <input id="apellido_m" name="apellido_m" type="text" class="validate">
                                 <label for="apellido_p">Apellido materno </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="e-mail" type="email" class="validate">
-                                <label for="e-mail">Correo electrónico</label>
+                                <input id="e_mail" name="e_mail" type="email" class="validate">
+                                <label for="e_mail">Correo electrónico</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="mensaje" class="materialize-textarea"></textarea>
+                                <textarea id="mensaje" name="mensaje" class="materialize-textarea"></textarea>
                                 <label for="mensaje">Escriba aquí su mensaje</label>
                             </div>
                         </div>
